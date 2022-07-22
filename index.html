@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paint</title>
+
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1 align="center">Paint Application</h1>
+	<canvas id="canvas" height="500" width="500" >Your browser does not support HTML5 canvas.</canvas><br>
+
+	<div class="tools">
+		Color : <input id="colour" type="color" name="favcolor" value="#000022" onchange="setColor();" placeholder="#ff0000"><br>
+		Width : <input id="widths" type="range" min="1" max="20" value="2" onchange="setWidth()" class="slider"><br><br>
+		<h3>Tools :</h3>
+		<a id="stlines" onclick="freeLines()" >Brush</a><br>
+		<a id="stlines" onclick="eraser()" >Eraser</a><br>
+		<a id="strings" onclick="print()" >Text</a><br>
+		<h3>Shapes :</h3>
+		<a id="stlines" onclick="lines()" >Straight Lines</a><br>
+		<a id="stlines" onclick="circles()" >Circle</a><br>
+		<a id="stlines" onclick="fillCircles()" >Fill Circle</a><br>
+		<a id="stlines" onclick="rectangles()" >Rectangle</a><br>
+		<a id="stlines" onclick="fillRectangles()" >Fill Rectangle</a><br> 
+	</div>
+
+	<input type="button" onclick="clears()" class="clear" value="Clear">
+	<input type="button" id="save" value="Save" class="save">
+
+	<script type="text/javascript" src="logic.js"></script>
+</body>
+</html>
