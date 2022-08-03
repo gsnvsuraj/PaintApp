@@ -194,6 +194,14 @@ function setWidth() {
 	ctx.lineWidth = parseInt(document.getElementById("widths").value);
 }
 
+function setHeight() {
+	c.style.height = document.getElementById("canvasHeight").value + "px";
+}
+
+function setWidth() {
+	c.style.width = document.getElementById("canvasWidth").value + "px";
+}
+
 function print() {
 	removeListeners();
 
